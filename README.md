@@ -174,3 +174,15 @@ import 'bootstrap/js/dist/dropdown';
 ```
 6. Rilanciare d azero il comando da terminale: ```npm run watch```
 7. Usare le classi di bootstrap 5 nelle views
+
+## Creare e gestire la prima rotta
+1. aprire il file web.php
+2. Da terminale lanciare il comando: ```php artisan make:controller [NomeController]```
+2. creiamo la struttura della rotta sulla base del controller:
+```
+Route::get('/', 'PageController@index' )->name('home');
+```
+## Stampare tabella nel terminale per leggere le liste
+1. lanciare da terminale il comando: ```php artisan route:list```
+## creare un model
+1. aprire il terminale e lanciare il comando: ```php artisan make:model Models/[NomeModello]```
